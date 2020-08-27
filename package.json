@@ -1,0 +1,52 @@
+{
+  "name": "vue-simple-mobile-calendar",
+  "version": "1.0.5",
+  "private": false,
+  "description": "A simple Vue component of calendar for mobile,Vue 移动端日期选择插件，支持酒店预订，单选日期，可自定义主题色 ",
+  "main": "lib/calendar.common.js",
+  "author": "smileTJC<taojiachao@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name calendar --dest lib ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smileTJC/vue-simple-mobile-calendar"
+  },
+  "bugs": {
+    "url": "https://github.com/smileTJC/vue-simple-mobile-calendar/issues"
+  },
+  "homepage": "https://github.com/smileTJC/vue-simple-mobile-calendar",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "typescript",
+    "calendar",
+    "component"
+  ],
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "postcss-px-to-viewport": "^1.1.1",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.5",
+    "vue-property-decorator": "^8.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.4",
+    "@vue/cli-plugin-eslint": "^4.5.4",
+    "@vue/cli-plugin-router": "^4.5.4",
+    "@vue/cli-plugin-typescript": "^4.5.4",
+    "@vue/cli-plugin-vuex": "^4.5.4",
+    "@vue/cli-service": "^4.5.4",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.0",
+    "typescript": "~3.5.3",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
