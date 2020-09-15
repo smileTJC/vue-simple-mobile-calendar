@@ -119,10 +119,10 @@ export default class Calendar extends Vue {
     this.isDisabled = false
     this.open = value
     // 若传入默认选中日期，则更新选中的日期
-    if (this.defaultDate instanceof Date) {
+    if (this.defaultDate instanceof Date && this.defaultDate.getTime() > new Date().getTime()) {
       this.startTime = this.defaultDate
     }
-    if (this.defaultDate instanceof Array && this.defaultDate.length > 0) {
+    if (this.defaultDate instanceof Array && this.defaultDate.length > 0 && new Date(this.defaultDate[0]).getTime() > new Date().getTime()) {
       this.startTime = this.defaultDate[0]
       this.endTime = this.defaultDate[1]
     }

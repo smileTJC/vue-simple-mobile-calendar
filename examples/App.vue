@@ -12,7 +12,7 @@
            <div>{{selectedRangeDate.startDate + '--' + selectedRangeDate.endDate}}</div>
          </li>
           <li class="demo-item" @click="showDefaultDate = true">
-           <div>传入默认日期</div>
+           <div>传入默认日期(小于今天日期不生效)</div>
            <div v-show="backDefaultDate.length > 0">{{backDefaultDate[0] + '--' + backDefaultDate[1]}}</div>
          </li>
        </ul>
@@ -78,7 +78,7 @@ export default class App extends Vue {
   private showCustomCheckText: boolean = false
   private showControlDay: boolean = false
   private isCricle: boolean = false // 默认是true:圆形; false: 圆角矩形
-  private defaultDate = [new Date('2020/09/01'), new Date('2020/09/03')]
+  private defaultDate = [new Date('2020/10/01'), new Date('2020/10/03')]
   private seledtedDate = ''
   private titleDate = ''
   private monthDate = ''

@@ -2,6 +2,10 @@
 * 基于Vue 2.x 开发的轻量，简洁的日历组件
 * 可扩展性强，多种日期格式可选择
 
+[![Build Status](https://travis-ci.org/smileTJC/vue-simple-mobile-calendar.svg?branch=master)](https://travis-ci.org/smileTJC/vue-simple-mobile-calendar)
+### Demo
+手机端查看或者PC浏览器自带手机模拟器查看效果更佳
+[demo](https://smiletjc.github.io/vue-simple-mobile-calendar/dist/index.html)
 ### Install
 ```
 npm install vue-simple-mobile-calendar --save
@@ -10,7 +14,7 @@ npm install vue-simple-mobile-calendar --save
 ### Usage
 ```
 //vue文件中引入
-import calendar from 'vue-simple-mobile-calendar';
+import calendar from 'vue-mobile-calendar';
  components: {
     calendar
   }
@@ -25,7 +29,7 @@ import calendar from 'vue-simple-mobile-calendar';
       // :limitDay="30"  开始控制可选天数的范围，controlDay为true时生效,默认值：30
       // :customColor="colorOptions" 自定义日历主题样式, 默认值是蓝色,详细参数看API
       // :customCheckText="customCheckText"  自定义选中日期区间提示文本,详细参数看API
-      :defaultDate="defaultDate"  // 当前显示的日期，详细参数看API
+      :defaultDate="defaultDate"  // 当前显示的日期，传入例: `new Date()` 或 `[new Date('2020/10/01'), new Date('2020/10/03')]`详细参数看API
       @confirm="backRangeCalendar"
       @cancel="show = false"
       >
@@ -64,7 +68,6 @@ import calendar from 'vue-simple-mobile-calendar';
     this.selectedRangeDate.endDate = item.endDate
     this.show = false
   }
-
 ```
 
 ### API

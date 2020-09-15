@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-mobile-calendar",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "description": "A simple Vue component of calendar for mobile,Vue 移动端日期选择插件，支持酒店预订，单选日期，可自定义主题色 ",
   "main": "lib/calendar.common.js",
