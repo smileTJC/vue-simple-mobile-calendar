@@ -14,7 +14,7 @@ npm install vue-simple-mobile-calendar --save
 ### Usage
 ```
 //vue文件中引入
-import calendar from 'vue-mobile-calendar';
+import calendar from 'vue-simple-mobile-calendar';
  components: {
     calendar
   }
